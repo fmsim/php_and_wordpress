@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>PHP Static Variable Scope</title>
+    <title>PHP Global Variable Scope</title>
   </head>
   <body>
-    <h1>PHP Static Variable Scope</h1>
+    <h1>PHP Global Variable Scope</h1>
     <?php
       /*
         PHP Variables Scope
@@ -15,28 +15,15 @@
         *  Local : A variable declared within a function
         *  Global: A variable declared outside a function
         *  Static: A static variable exists only in a local function scope
-        *          but does not lose it's value
       */
-      /*
-      function test() {
-        $k = 0;
-        echo $k;
-        $k++;
+      $x = 6;
+      $y = 7;
+      function myTest() {
+        global $x, $y;
+        $y = $x + $y;
       }
-      test(); // runs function
-      echo "<br>";
-      test();
-      */
-      function test() {
-        static $k = 0;
-        echo $k;
-        $k++;
-      }
-      test(); // runs function
-      echo "<br>";
-      test();
-      echo "<br>";
-      test();
+      myTest(); // runs function
+      echo $y; // output the new value for variable $y
     ?>
     <!-- scripts -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
