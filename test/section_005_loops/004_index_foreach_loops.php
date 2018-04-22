@@ -9,10 +9,7 @@
   <body>
     <h1>FOREACH Loops</h1>
     <?php
-      $cars = ["Range Rover", "BMW", "Ford", "Toyota"];
-      foreach ($cars as $value) {
-        echo "$value <br>";
-      }
+      
     ?>
     <!-- scripts -->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.3.1.min.js"></script>

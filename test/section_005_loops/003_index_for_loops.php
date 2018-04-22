@@ -4,14 +4,13 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>FOREACH Loops</title>
+    <title>FOR Loops</title>
   </head>
   <body>
-    <h1>FOREACH Loops</h1>
+    <h1>FOR Loops</h1>
     <?php
-      $cars = ["Range Rover", "BMW", "Ford", "Toyota"];
-      foreach ($cars as $value) {
-        echo "$value <br>";
+      for ($x = 0; $x <= 17; $x++) {
+        echo "The number is $x <br>";
       }
     ?>
     <!-- scripts -->
